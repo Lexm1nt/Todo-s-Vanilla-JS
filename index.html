@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="motto">Simple as click</div>
+      <h1 class="header">Todo's</h1>
+      <form class="task-form">
+        <input
+          type="text"
+          class="task-input"
+          id="task-input"
+          placeholder="What to do..."
+          autocomplete="off"
+          maxlength="50"
+        />
+      </form>
+      <ul class="task-list"></ul>
+      <div class="task-counter">Let's add some tasks!</div>
+      <small class="tips"
+        >Left click to complete<br />
+        Right click to remove</small
+      >
+    </div>
+  </body>
+</html>
