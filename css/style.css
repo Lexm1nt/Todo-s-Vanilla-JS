@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+  padding: 0;
+}
+
+::-moz-selection {
+  background: #cd7192;
+}
+
+::selection {
+  background: #cd7192;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #cd7192;
+  color: white;
+}
+
+.wrapper {
+  width: clamp(26.25rem, 20.893rem + 26.786vw, 45rem);
+  display: flex;
+  border: 3px solid lightcoral;
+  align-items: center;
+  justify-content: center;
+  background-color: lightsalmon;
+  margin-top: 2em;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  flex-direction: column;
+  box-shadow: 6px 3px 11px 3px rgba(34, 60, 80, 0.2);
+  position: relative;
+}
+
+.header {
+  font-size: 3em;
+  opacity: 0.6;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.task-input {
+  border: 3px solid lightcoral;
+  max-width: 198px;
+  height: 1.45rem;
+  outline: none;
+  font-family: inherit;
+  color: black;
+  transition: background-color, 0.2s;
+}
+
+.task-input::-moz-placeholder {
+  text-align: center;
+}
+
+.task-input::placeholder {
+  text-align: center;
+}
+
+.task-input:hover,
+.task-input:focus-visible {
+  background-color: beige;
+}
+
+.task-list {
+  font-size: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+  padding: 0;
+  width: clamp(9.875rem, 7.911rem + 9.821vw, 16.75rem);
+  margin: 1em;
+  color: white;
+  text-align: center;
+  list-style-type: decimal-leading-zero;
+}
+
+.task-item {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #9f6997;
+  margin-bottom: 5px;
+  cursor: pointer;
+  max-width: 300px;
+  word-wrap: break-word;
+  transition: filter, 0.3s;
+}
+
+.task-item:hover {
+  filter: brightness(115%);
+}
+
+.task-item::marker {
+  color: #6e618d;
+}
+
+.completed {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 1.5px;
+}
+
+.task-counter {
+  margin-bottom: 30px;
+}
+
+.task-counter > em {
+  font-style: normal;
+  color: #cd7192;
+}
+
+.tips {
+  font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem);
+  text-align: center;
+}
+
+.motto {
+  position: absolute;
+  right: 3em;
+  top: 3em;
+  transform: rotate(-25deg);
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #cd7192;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media (max-width: 460px) {
+  .motto {
+    position: static;
+    top: auto;
+    right: auto;
+    transform: none;
+  }
+  .header {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
